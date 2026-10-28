@@ -1,0 +1,9 @@
+# Runtime dependencies for the local transcription app.
+# yt-dlp "default" extra pulls in yt-dlp-ejs (needed for full YouTube support);
+# the "deno" extra installs the Deno JavaScript runtime inside the virtual
+# environment, so no system-wide JavaScript runtime install is required.
+yt-dlp[default,deno]>=2026.10.26
+faster-whisper>=1.2.1,<2
+# faster-whisper 1.2.1 calls av.open(..., metadata_errors=...), which PyAV 19.0
+# removed. Keep PyAV below 19 until faster-whisper supports it.
+av>=11,<19

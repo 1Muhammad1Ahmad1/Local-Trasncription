@@ -1,0 +1,39 @@
+# Virtual environment and Python caches
+.venv/
+__pycache__/
+*.pyc
+
+# Downloaded speech models and project-local tools (FFmpeg)
+models/*
+!models/.gitkeep
+tools/
+
+# Run artefacts
+logs/*
+!logs/.gitkeep
+state/*
+!state/.gitkeep
+
+# Your link files and transcripts (personal data)
+input/*
+!input/.gitkeep
+output/*
+!output/.gitkeep
+
+# Temporary files
+*.partial
+*.tmp
+*.part
+*.ytdl
+
+.venv/
+venv/
+__pycache__/
+*.pyc
+/models/
+/logs/
+/state/
+/input/
+/output/
+/tools/
+.env
